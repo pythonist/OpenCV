@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 def getCountours(imgResize):
-    contours,hierarchy = cv2.findContours(imgResize,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
+    contours,hierarchy = cv2.findContours(img,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
     for i in contours:
         area = cv2.contourArea(i)
         print(area)
